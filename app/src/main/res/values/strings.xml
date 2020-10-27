@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">PocketMemo</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="fragment_home_label">Home</string>
+    <string name="fragment_detail_label">Detail</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="comment_input_messages">Input messages</string>
+
+    <!-- Transition name -->
+    <string name="transition_name_memo_detail">Memo detail</string>
+</resources>

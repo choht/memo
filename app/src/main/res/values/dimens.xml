@@ -1,0 +1,9 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- Text Size -->
+    <dimen name="text_size_item_normal">16sp</dimen>
+    <dimen name="text_size_item_small">12sp</dimen>
+
+    <integer name="item_line">3</integer>
+</resources>

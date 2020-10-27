@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/MemoListFragment">
+
+    <fragment
+        android:id="@+id/MemoListFragment"
+        android:name="com.pocketmemo.view.MemoListFragment"
+        android:label="@string/fragment_home_label"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_MemoListFragment_to_MemoEditFragment"
+            app:destination="@id/MemoEditFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/MemoEditFragment"
+        android:name="com.pocketmemo.view.MemoEditFragment"
+        android:label="@string/fragment_detail_label"
+        tools:layout="@layout/fragment_detail">
+
+        <action
+            android:id="@+id/action_MemoEditFragment_to_MemoListFragment"
+            app:destination="@id/MemoListFragment" />
+    </fragment>
+
+    <action
+        android:id="@+id/action_global_list"
+        app:destination="@id/MemoListFragment"
+        app:launchSingleTop="true"
+        app:popUpTo="@+id/nav_graph"
+        app:popUpToInclusive="true"/>
+
+    <action
+        android:id="@+id/action_global_edit"
+        app:destination="@id/MemoEditFragment"/>
+</navigation>
